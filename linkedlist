@@ -1,0 +1,12 @@
+import java.util.*;
+class collec {
+    public static void main(String[] args) {
+        LinkedList <String>l=new LinkedList<String>();
+        l.add("abc");
+        l.add("cde");
+        l.add("fgh");
+        System.out.println("values added :"+l);
+        l.remove("abc");
+                System.out.println("values removed after:"+l);
+    }
+}
