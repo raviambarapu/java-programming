@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class palinrome{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of perfect numbers to print: ");
+        int n = scanner.nextInt();
+        int count = 0;
+        int num = 1;
+        while (count < n) {
+            int sumOfDivisors = 0;
+            for (int i = 1; i < num; i++) {
+                if (num % i == 0) {
+                    sumOfDivisors += i;
+                }
+            }
+            if (sumOfDivisors == num) {
+                System.out.println(num);
+                count++;
+            }
+            num++;
+        }
+    }
+}
