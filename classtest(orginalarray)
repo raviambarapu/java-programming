@@ -1,0 +1,20 @@
+class originalarray{
+    public static void main(String[] args) {
+        int[] originalArray = {1, 2, 3, 4, 5};
+        int[] copiedArray = new int[originalArray.length];
+        int index = 0;
+        for (int element : originalArray) {
+            copiedArray[index++] = element;
+        }
+        System.out.println("Original Array:");
+        printArray(originalArray);
+        System.out.println("\nCopied Array:");
+        printArray(copiedArray);
+    }
+    private static void printArray(int[] arr) {
+        for (int element : arr) {
+            System.out.print(element + " ");
+        }
+        System.out.println();
+    }
+}
